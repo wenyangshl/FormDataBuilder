@@ -7,10 +7,22 @@
     <Authors>Wenyang Yao</Authors>
     <Company>Revotek Solution, LLC</Company>
     <Description>FormDataBuilder</Description>
+    <PackageProjectUrl>https://github.com/wenyangshl/FormDataBuilder</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/wenyangshl/FormDataBuilder</RepositoryUrl>
+    <PackageTags>.net</PackageTags>
+    <NeutralLanguage />
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
