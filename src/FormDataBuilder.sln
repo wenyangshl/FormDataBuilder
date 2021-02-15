@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30711.63
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormDataBuilder", "FormDataBuilder\FormDataBuilder.csproj", "{D0F51BD4-6FFB-4DEF-BDE6-81C38F76DB04}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FormDataBuilder", "FormDataBuilder\FormDataBuilder.csproj", "{D0F51BD4-6FFB-4DEF-BDE6-81C38F76DB04}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormDataBuilder.Test", "..\tests\FormDataBuilder.Test\FormDataBuilder.Test.csproj", "{C371CDE4-4CD6-4A3B-BC30-43745E6EE20F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{D0F51BD4-6FFB-4DEF-BDE6-81C38F76DB04}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D0F51BD4-6FFB-4DEF-BDE6-81C38F76DB04}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D0F51BD4-6FFB-4DEF-BDE6-81C38F76DB04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C371CDE4-4CD6-4A3B-BC30-43745E6EE20F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C371CDE4-4CD6-4A3B-BC30-43745E6EE20F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C371CDE4-4CD6-4A3B-BC30-43745E6EE20F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C371CDE4-4CD6-4A3B-BC30-43745E6EE20F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

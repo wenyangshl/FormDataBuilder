@@ -9,7 +9,7 @@ namespace FormDataBuilder
 {
     public static class FormDataBuilder
     {
-        private static Dictionary<string, string> CreateFormData(object data, ref Dictionary<string, string> formData, string parentKey)
+        public static Dictionary<string, string> CreateFormData(object data, ref Dictionary<string, string> formData, string parentKey = "")
         {
             const string REPLACEKEY = "%^&*";
             if (data == null)
@@ -17,8 +17,6 @@ namespace FormDataBuilder
             PropertyInfo[] properties = data.GetType().GetProperties();
             foreach (var p in properties)
             {
-                if (p.GetValue(data) == null)
-                    continue;
                 object[] attrs = p.GetCustomAttributes(true);
                 string name = "";
                 bool isRequired = false;
@@ -33,9 +31,14 @@ namespace FormDataBuilder
                     }
                     else if (attr.GetType() == typeof(JsonPropertyAttribute))
                     {
+                        if (p.GetValue(data) == null)
+                            continue;
                         name = (attr as JsonPropertyAttribute)?.PropertyName;
                     }
                 }
+
+                if (p.GetValue(data) == null)
+                    continue;
 
                 if (string.IsNullOrEmpty(name))
                 {
